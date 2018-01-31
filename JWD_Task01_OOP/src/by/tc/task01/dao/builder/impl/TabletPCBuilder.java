@@ -10,7 +10,6 @@ public class TabletPCBuilder implements ApplianceBuilder{
 	
 	public Appliance build(String ApplinceType, String line) {
 		TabletPC tabletPC = new TabletPC();
-//		String[] attribute = line.replace(",", " ").split("  ");
 		String[] appliance = line.replace(";", "").split(" : ");
 		String applianceParameterLine = appliance[1];
 		String[] attribute = applianceParameterLine.replace(",", " ").split("  ");

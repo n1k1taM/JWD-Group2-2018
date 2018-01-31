@@ -10,7 +10,7 @@ public class RefrigeratorBuilder implements ApplianceBuilder{
 	@Override
 	public Appliance build(String ApplinceType, String line) {
 		Refrigerator refrigerator = new Refrigerator();
-//		String[] attribute = line.replace(",", " ").split("  ");
+
 		String[] appliance = line.replace(";", "").split(" : ");
 		String applianceParameterLine = appliance[1];
 		String[] attribute = applianceParameterLine.replace(",", " ").split("  ");

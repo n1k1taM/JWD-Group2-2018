@@ -10,7 +10,6 @@ public class VacuumCleanerBuilder implements ApplianceBuilder {
 	@Override
 	public Appliance build(String ApplinceType, String line) {
 		VacuumCleaner vacuumCleaner = new VacuumCleaner();
-//		String[] attribute = line.replace(",", " ").split("  ");
 		String[] appliance = line.replace(";", "").split(" : ");
 		String applianceParameterLine = appliance[1];
 		String[] attribute = applianceParameterLine.replace(",", " ").split("  ");

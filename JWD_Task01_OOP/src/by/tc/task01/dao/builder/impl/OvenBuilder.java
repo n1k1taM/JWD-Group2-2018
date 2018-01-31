@@ -10,7 +10,6 @@ public class OvenBuilder implements ApplianceBuilder{
 	@Override
 	public Appliance build(String ApplinceType, String line) {
 		Oven oven = new Oven();
-//		String[] attribute = line.replace(",", " ").split("  ");
 		
 		String[] appliance = line.replace(";", "").split(" : ");
 		String applianceParameterLine = appliance[1];
