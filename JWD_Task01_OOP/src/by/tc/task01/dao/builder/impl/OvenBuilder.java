@@ -11,7 +11,7 @@ public class OvenBuilder implements ApplianceBuilder{
 	public Appliance build(String ApplinceType, String line) {
 		Oven oven = new Oven();
 		
-		String[] appliance = line.replace(";", "").split(" : ");
+		String[] appliance = line.replace(";", "").split(" : ");// именуй константы в коде
 		String applianceParameterLine = appliance[1];
 		String[] attribute = applianceParameterLine.replace(",", " ").split("  ");
 		
