@@ -23,7 +23,7 @@ public class ApplianceServiceImpl implements ApplianceService{
 			appliance = applianceDAO.find(criteria);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e.printStackTrace();// а мы затихаримся и никому не скажем, что у нас ЧП
 		}
 		
 		// you may add your own code here
