@@ -21,7 +21,7 @@ public class SourceApplianceReader {
 
 
 	public List<String> getAllFileLines() throws IOException {
-		String fileName = ConfigurationManager.getProperty("file-name");
+		String fileName = ConfigurationManager.getProperty("file-name");// именуй константы
 		List<String> fileLines = Files.readAllLines(Paths.get(fileName), StandardCharsets.UTF_8);
 		return fileLines;
 		
