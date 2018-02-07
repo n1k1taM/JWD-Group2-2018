@@ -29,7 +29,7 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 			int criteriaCounter = 0;
 			for (Map.Entry<E, Object> entry : criteriaMap.entrySet()) {
 				boolean resultMatching = ApplianceParameterComparator.match(line, criteria.getApplianceType(),
-						entry.getKey().toString(), entry.getValue().toString());
+						entry.getKey().toString(), entry.getValue().toString());// что? реально? читать  эту строку? а полегче чего нельзя?
 				if (resultMatching) {
 					criteriaCounter++;
 				}
