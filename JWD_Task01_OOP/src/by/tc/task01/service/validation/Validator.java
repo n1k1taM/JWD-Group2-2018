@@ -14,7 +14,7 @@ public class Validator {
 		Map<E, Object> searchMap = criteria.getCriteria();
 		
 		for (Map.Entry<E, Object> entry : searchMap.entrySet()){
-			if((entry.getValue() != null) && (!(entry.getValue().toString().equals("")))){
+			if((entry.getValue() != null) && (!(entry.getValue().toString().equals("")))){// несолидная валидация, совсем
 				 validationResault = true;
 			}
 		}

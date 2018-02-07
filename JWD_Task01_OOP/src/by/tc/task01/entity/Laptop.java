@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 
 public class Laptop extends Appliance implements Serializable{
-	// you may add your own code here
+	// you may add your own code here // чистить код надо
 	private static final long serialVersionUID = 1L;
 	private float battetyCapacity;
 	private String operatingSystem;
@@ -27,7 +27,7 @@ public class Laptop extends Appliance implements Serializable{
 	
 	public Laptop() {
 		super();
-		// TODO Auto-generated constructor stub
+		// TODO Auto-generated constructor stub //???
 	}
 
 

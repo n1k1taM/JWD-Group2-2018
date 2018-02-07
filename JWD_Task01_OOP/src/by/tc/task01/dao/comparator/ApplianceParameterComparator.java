@@ -10,7 +10,8 @@ public class ApplianceParameterComparator {
 
 			if (applianceType.toUpperCase().equals(applianceName.toUpperCase())) {
 				String[] applianceParameterArray = applianceParameter.replace(",", " ").replace(";", "").split("  ");
-				for (int i = 0; i < applianceParameterArray.length; i++) {
+				for (int i = 0; i < applianceParameterArray.length; i++) {// мой мозг потерян уже на этом цикле
+					// классы и методы в Java бестплатны - пользуйся ими
 					String temp = applianceParameterArray[i];
 					if(temp.toUpperCase().equals(new String(parameter + "=" + value).toUpperCase())){
 						matchingResault = true;
