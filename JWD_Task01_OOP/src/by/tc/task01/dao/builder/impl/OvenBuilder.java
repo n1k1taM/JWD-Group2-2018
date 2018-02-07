@@ -11,7 +11,8 @@ public class OvenBuilder implements ApplianceBuilder{
 	public Appliance build(String ApplinceType, String line) {
 		Oven oven = new Oven();
 		
-		String[] appliance = line.replace(";", "").split(" : ");// именуй константы в коде
+		String[] appliance = line.replace(";", "").split(" : ");// именуй константы в коде //appliance - и что, правда только одна штука, а массив зачем?
+		
 		String applianceParameterLine = appliance[1];
 		String[] attribute = applianceParameterLine.replace(",", " ").split("  ");
 		
