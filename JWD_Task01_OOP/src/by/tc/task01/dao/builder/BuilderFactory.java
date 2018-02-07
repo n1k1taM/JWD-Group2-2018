@@ -22,7 +22,7 @@ public class BuilderFactory {
 		typeApplince = typeApplince.toUpperCase();
 		ApplianceBuilder builder = null;
 		switch (typeApplince) {
-		case "LAPTOP":// ёу, и Stitch огромадный, и объектов каждый раз создается куча
+		case "LAPTOP":// ёу, и Switch огромадный, и объектов каждый раз создается куча
 				// ну вот зачем тебе в коде понадобится на каждый вызов с определенным параметров новый экземпляр вот этого объекта?
 			builder = new LaptopBuilder();
 			break;
